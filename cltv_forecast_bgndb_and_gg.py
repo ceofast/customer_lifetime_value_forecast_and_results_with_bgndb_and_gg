@@ -104,8 +104,8 @@ def create_cltv_p(dataframe, month=3):
                                        cltv_df['recency'],
                                        cltv_df['T'],
                                        cltv_df['monetary'],
-                                       time=month,  # 3 aylık
-                                       freq="W",  # T'nin frekans bilgisi.
+                                       time=month,
+                                       freq="W",  
                                        discount_rate=0.01)
 ​
     cltv = cltv.reset_index()
